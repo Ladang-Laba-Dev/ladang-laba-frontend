@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ladang Laba - Bijak Menanam Cermat Memanen</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="home.html" class="navbar-brand">
+                    <h1 class="text-primary display-6">Ladang Laba</h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <a href="register.html" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-12 col-lg-7">
+                    <h4 class="mb-3 text-secondary">Prediksi Harga Tanaman Anda</h4>
+                    <h1 class="mb-5 display-3 text-primary">Bijak Menanam Cermat Memanen</h1>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active rounded">
+                                <img src="img/pertanian3.jpg" class="img-fluid w-100 h-100 bg-secondary rounded"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item rounded">
+                                <img src="img/pertanian1.avif" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Pilih Tanaman -->
+    <div class="container-fluid vesitable py-5">
+        <div class="container py-5">
+            <h1 class="mb-0">Pilih Tanaman</h1>
+            <p class="mb-4 text-muted">
+                Di Ladang Laba, Anda dapat memilih tanaman yang ingin diprediksi harganya. Pilih tanaman berikut untuk
+                melihat prediksi harga di masa depan.
+            </p>
+            <div class="owl-carousel vegetable-carousel justify-content-center">
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/bawang.png" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Tanaman Pangan</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Bawang</h4>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/cabai3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Tanaman Pangan</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Cabai</h4>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/jagung.png" class="img-fluid w-100 rounded-top bg-light" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Tanaman Pangan</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Jagung</h4>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pilih Tanaman -->
+
+    <!-- Prediksi Harga Nasional -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-4">Prediksi Harga Nasional</h1>
+                <p>Dapatkan estimasi harga tanaman dengan data berbasis model prediksi yang dirancang untuk membantu
+                    petani dan pelaku usaha agrikultur.</p>
+            </div>
+            <div class="row">
+                <!-- Kolom Kiri dan Kanan dengan latar belakang abu-abu -->
+                <div class="col-md-12 bg-light p-5 rounded">
+                    <div class="row">
+                        <!-- Kolom Kiri (Tabel) -->
+                        <div class="col-md-6">
+                            <div class="counter bg-white rounded p-5">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <th class="text-center">Bulan</th>
+                                            <th class="text-center">Harga (/kg)</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="bg-light">
+                                                <td class="text-center">Desember 2024</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Januari 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                            <tr class="bg-light">
+                                                <td class="text-center">Februari 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Maret 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                            <tr class="bg-light">
+                                                <td class="text-center">April 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                                <td class="text-center">Mei 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                            <tr class="bg-light">
+                                                <td class="text-center">Juni 2025</td>
+                                                <td class="text-center">Rp 25.000,-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kolom Kanan  -->
+                        <div class="col-md-6">
+                            <div class="bg-light p-5 rounded">
+                                <img src="img/petaindonesia.avif" alt="Prediksi Harga" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Prediksi Harga Nasional -->
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
